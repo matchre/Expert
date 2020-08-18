@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+
+	<head>
+		<meta charset="utf-8" />
+		<style type="text/css">
+		<!--
+			a {
+			text-decoration: none;
+			color: #000000;
+			}
+		-->
+		</style>
+
+		<title>Python - Maths</title>
+		
+		
+	</head>
+	
+	<body>
+
+		<div id="page">
+			<h1>Nombres premiers</h1>
+			
+			<div class="encart">
+				<p class="titre"> - Test de primalité<br>
+On teste la divisibilité par tous les entiers inférieurs à sqrt(n). </p>
+				<div class="panneau" id="panneau-1">
+					<iframe src="https://trinket.io/embed/python/03dd5216a1" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>	
+				</div>
+			</div>
+			
+			<div class="encart">
+				<p class="titre"> - Génération de nombres premiers<br>
+Permet de créer la liste des nombres premiers inférieurs à n.<br>
+On utilise ici le crible d'Erathostene.  </p>
+				<div class="panneau" id="panneau-1">
+					<iframe src="https://trinket.io/embed/python/3f02657627" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>	
+				</div>
+			</div>
+			
+			<div class="encart">
+				<p class="titre"> - Chiffrement RSA<br>
+Clé publique<br>
+La clé publique est (n, e).<br>
+    n est le produit de 2 nombres premiers p et q si possibles grands.<br> Le but étant que n soit un nombre très difficile à décomposer.
+    e intervient dans le codage. <br>Il doit être premier avec (p-1)(q-1)=φ(n).  </p>
+				<div class="panneau" id="panneau-1">
+					<iframe src="https://trinket.io/embed/python/f42f8f67fb" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>	
+				</div>
+			</div>
+
+			<div class="encart">
+				<p class="titre"> - Chiffrement RSA<br>
+Chiffrement d'un message par la méthode RSA. A partir de la clé publique (n, e)<br>
+Chiffrement (pour l'illustration, on prend un nombre) de X par Y avec : Y≡Xe[n].
+
+Nombre à coder : </p>
+				<div class="panneau" id="panneau-1">
+						<iframe src="https://trinket.io/embed/python/57a8ea04e0" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+				</div>
+			</div>
+			
+			<div class="encart">
+				<p class="titre"> - Déchiffrement RSA<br>
+L'objectif est de retrouver la clé secrète à partir de la clé publique.<br>Il faut donc essayer de "casser" n (décomposer n en un produit de deux nombres premiers p et q).<br>
+On obtient alors la clé secrète (n,d) et il est possible de retrouver le nombre original.<br>
+Il suffit de réutiliser l'algorithme de chiffrement avec la clé (n,d)  : X≡Yd[n].  </p>
+				<div class="panneau" id="panneau-1">
+					<iframe src="https://trinket.io/embed/python/65dc86b6e3" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>	
+				</div>
+			<div class="encart">
+				<p class="titre"> - Test de Fermat <br>
+Ce test utilise le petit théorème de Fermat :
+Soit a un nombre entier, si p est premier alors ap≡a[p]. <br>
+
+On teste donc un nombre n et on souhaite savoir si il est premier.<br>
+Ensuite on choisit un nombre a.<br>
+    D'après la contraposée, si an n'est pas congru à a modulo n alors n n'est pas un nombre premier.<br>
+    Par contre, la réciproque de ce théorème n'est pas vraie. Toutefois si an≡a[n] on considère que le nombre n est probablement premier.  </p>
+				<div class="panneau" id="panneau-1">
+						<iframe src="https://trinket.io/embed/python/d926c49eb9" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+				</div>
+			</div>
+			
+			</div>			
+			<div class="encart">
+				<p class="titre">  </p>
+				<div class="panneau" id="panneau-1">
+						
+				</div>
+			</div>
+			
+			<div class="encart">
+				<p class="titre">  </p>
+				<div class="panneau" id="panneau-1">
+						
+				</div>
+			</div>			
+			
+			
+			
+			
+			
+			
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+		<script src="http://mrchretien.free.fr/htmlrefjs.js"></script>
+
+	</body>
+
+</html>
